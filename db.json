@@ -54,6 +54,11 @@
       "id": 11,
       "quote": "The here and now is all we have, and if we play it right it's all we'll need.",
       "author": "Ann Richards"
+    },
+    {
+      "quote": "There are no regrets in life, only lessons.",
+      "author": "Jennifer Aniston",
+      "id": 12
     }
   ],
   "likes": [
@@ -66,6 +71,81 @@
       "quoteId": 10,
       "id": 2,
       "createdAt": 1558524358
+    },
+    {
+      "quoteId": 1,
+      "createdAt": 1595289312,
+      "id": 3
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1595289313,
+      "id": 4
+    },
+    {
+      "quoteId": 3,
+      "createdAt": 1595289314,
+      "id": 5
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1595289316,
+      "id": 6
+    },
+    {
+      "quoteId": 12,
+      "createdAt": 1595289600,
+      "id": 7
+    },
+    {
+      "quoteId": 12,
+      "createdAt": 1595289601,
+      "id": 8
+    },
+    {
+      "quoteId": 12,
+      "createdAt": 1595289603,
+      "id": 9
+    },
+    {
+      "quoteId": 11,
+      "createdAt": 1595349316,
+      "id": 10
+    },
+    {
+      "quoteId": 1,
+      "createdAt": 1595349317,
+      "id": 11
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1595349319,
+      "id": 12
+    },
+    {
+      "quoteId": 12,
+      "createdAt": 1595349463,
+      "id": 13
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1595349485,
+      "id": 14
+    },
+    {
+      "quoteId": 1,
+      "createdAt": 1595349487,
+      "id": 15
+    },
+    {
+      "quoteId": 11,
+      "createdAt": 1595349491,
+      "id": 16
+    },
+    {
+      "quoteId": 12,
+      "createdAt": 1595351531,
+      "id": 17
     }
   ]
 }
