@@ -66,7 +66,7 @@ const buildQuoteCard = (quotes) => {
     <p class="mb-0">${quotes.quote}.</p>
     <footer class="blockquote-footer">${quotes.author}</footer>
     <br>
-    <button class='btn-success'>likes:${quotes.likes} <span>0</span></button>
+    <button class='btn-success'>likes: <span> 0</span></button>
     <button class='btn-danger' data-delete='delete-btn'>Delete</button>
     <button class='btn-primary' data-edit='edit-btn' id="${quotes.id}">Edit</button>
 
@@ -87,8 +87,7 @@ const buildQuoteCard = (quotes) => {
   const deleteBtn = card.querySelector('.btn-danger')
   deleteBtn.addEventListener('click', () => {
     deleteCurrentQuote(quotes)
-      // console.log(quotes)
-  // console.log(deleteBtn)
+
   })
 
   const editBtn = card.querySelector('.btn-primary')
@@ -116,6 +115,7 @@ fetch('http://localhost:3000/likes', {
   spanButton.textContent = count 
 })
 } 
+
 // LIKES GET REQUEST
 // const keepLikes = (quotes, e) => {
 //   console.log(quotes)
@@ -150,7 +150,10 @@ const postNewQuotes = (e) =>{
    body: JSON.stringify(data)
  })
  .then(res => res.json())
- .then(json => buildQuoteCard(json))
+ .then(json => {
+   console.log(json)
+   buildQuoteCard(json)
+  })
 }
 
 //Delete Quotes
@@ -167,7 +170,8 @@ const deleteCurrentQuote = (quotes) => {
 
  })
 }
-
+// Sort by Author
+// it Sorts if You capitalize the first letter 
 sortBtn.addEventListener('click', () => {
   console.log(sortBtn)
   const sortUl = document.querySelector('ul')
@@ -177,5 +181,5 @@ sortBtn.addEventListener('click', () => {
   .then(json => json.forEach(quote => buildQuoteCard(quote)))
 })
 
-// nt sorting correctly!
+
 
